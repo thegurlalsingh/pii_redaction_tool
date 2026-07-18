@@ -45,5 +45,17 @@ A rule + detector hybrid gave better control over precision and document-structu
 4. **Residual artifacts in redacted text**  
    Proxy evaluation shows some FP where detector catches new synthetic strings post-redaction.
 
+## Input / Output Artifacts
+
+The data foler contains complete input and output artifacts for evaluation.
+
+- **Input 
+  - Original DOCX document containing real PII.
+
+- **Predictions File
+
+- **Redacted Output (`data/output/redacted.docx`)**
+  - Final document with all detected PII replaced by deterministic synthetic values while preserving the original document layout and formatting.
+
 ## Deployment
 A Streamlit app is used for upload → redact → download workflow and is deployable on Streamlit Community Cloud.

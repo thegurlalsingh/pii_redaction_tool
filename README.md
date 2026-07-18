@@ -57,15 +57,5 @@ The data foler contains complete input and output artifacts for evaluation.
 - **Redacted Output (`data/output/redacted.docx`)**
   - Final document with all detected PII replaced by deterministic synthetic values while preserving the original document layout and formatting.
 
-PII Type           |   TP |   FP |   FN | Precision |    Recall |  Accuracy
--------------------------------------------------------------------------------------
-NAME               |   65 |  184 |   79 |      0.26 |      0.45 |      0.20
-EMAIL              |   24 |   28 |    2 |      0.46 |      0.92 |      0.44
-PHONE              |   23 |   21 |    0 |      0.52 |      1.00 |      0.52
-ADDRESS            |   25 |   24 |   42 |      0.51 |      0.37 |      0.27
-COMPANY            |  243 |  157 |  311 |      0.61 |      0.44 |      0.34
--------------------------------------------------------------------------------------
-OVERALL            |  380 |  414 |  434 |      0.48 |      0.47 |      0.31
-
 ## Deployment
 A Streamlit app is used for upload → redact → download workflow and is deployable on Streamlit Community Cloud.
